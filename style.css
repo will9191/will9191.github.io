@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&display=swap');
+
+:root {
+  --primary: rgb(65, 65, 65);
+  --secondary: rgb(53, 99, 108);
+}
+
+body{display: flex;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth !important;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 15% 2rem;
+}
+
+#preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3333;
+}
+
+.scroll-top i {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.scroll-top i:hover {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #efefef,
+    #e0e0e0,
+    #d1d1d1,
+    #c2c2c2
+  );
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  z-index: 100;
+  align-items: center;
+}
+
+.logo {
+  font-size: 50px;
+  user-select: none;
+}
+
+.navbar-right ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.navbar ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+  color: var(--secondary);
+}
+
+.active {
+  color: #fff;
+}
+
+b {
+  color: #ffffff;
+  font-size: 70px;
+}
+
+/*Abount*/
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.about-content-left h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.about-content-left h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.dev {
+  color: var(--secondary);
+}
+
+.about-content-left p {
+  font-weight: lighter;
+  word-break: normal;
+  max-width: 500px;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-content-right img {
+  width: 300px;
+  border-radius: 38px;
+}
+
+.links {
+  display: flex;
+}
+
+.links i {
+  display: flex;
+  font-size: 70px;
+}
+
+.links i:hover {
+  color: var(--secondary);
+  transform: scale(1.2);
+}
+
+/*Skills*/
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.29);
+  padding: 40px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.card h1{
+  margin-bottom: 30px;
+}
+
+.card h3{
+  text-align: justify;
+}
+
+.icons {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.icons img:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+.project h3{
+  color: var(--secondary);
+}
+
+.project {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/*Contact*/
+
+.contact-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 3px solid var(--secondary);
+  outline: 0;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: transparent;
+  resize: none;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.518);
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+form .btn {
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  padding: 20px;
+}
