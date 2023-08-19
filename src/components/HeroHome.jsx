@@ -4,7 +4,7 @@ import img from '../assets/photo.jpg';
 
 const HeroHome = () => {
   return (
-    <HeroContainer id='home'>
+    <HeroContainer>
       <HeroLeft>
         <HeroH1>Hi👋, I'm Willian</HeroH1>
         <HeroH2>Web Developer</HeroH2>
@@ -37,10 +37,11 @@ const HeroRight = styled.div``;
 
 const HeroH2 = styled.h2`
   font-size: 40px;
+  color: #202020;
 `;
 
 const HeroH1 = styled.h1`
-  text-shadow: 1px 0px blue;
+  text-shadow: 3px 0px white;
   font-size: 70px;
 `;
 
