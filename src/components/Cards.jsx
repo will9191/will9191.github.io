@@ -20,13 +20,10 @@ const CardsContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
 
-const Card = styled.div`
-  
-`;
 
 const CardImg = styled.img`
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border: 1px solid black;
   padding: 40px;
   border-radius: 10px;

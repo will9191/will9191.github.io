@@ -7,6 +7,7 @@ const Navbar = () => {
     <Nav>
       <NavItem to='/'>Home</NavItem>
       <NavItem to='/skills'>Skills</NavItem>
+      <NavItem to='/projects'>Projects</NavItem>
       <NavItem to='/contact'>Contact</NavItem>
     </Nav>
   );
@@ -32,7 +33,7 @@ const NavItem = styled(NavLink)`
   &:after {
     display: block;
     content: '';
-    border-bottom: solid 3px #00425e;
+    border-bottom: solid 3px rgb(53, 99, 108);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
@@ -40,6 +41,6 @@ const NavItem = styled(NavLink)`
     transform: scaleX(1);
   }
   &.active {
-    color: #00425e;
+    color: rgb(53, 99, 108);
   }
 `;

@@ -53,5 +53,10 @@
     "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
     "name": "Sass",
     "desc": "Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets. SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called 'the indented syntax,' uses a syntax similar to Haml."
+  },
+  {
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/csharp/csharp-line.svg",
+    "name": "C#",
+    "desc": "C# is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines."
   }
 ]
