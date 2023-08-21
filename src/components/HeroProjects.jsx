@@ -59,6 +59,7 @@ const HeroContainer = styled.section`
 
 const Projects = styled.div`
   display: flex;
+  max-width: 100%;
 `;
 
 const Project = styled(Link)`
