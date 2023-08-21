@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from '../assets/photo.jpg';
+import img from '../assets/will.jpg';
 import * as Fa from 'react-icons/fa';
 import * as Ai from 'react-icons/ai';
 import { Link } from 'react-router-dom';
