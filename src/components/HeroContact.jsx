@@ -47,9 +47,7 @@ const HeroForm = styled.form`
   text-align: center;
 `;
 
-const HeroH1 = styled.h1`
-
-`;
+const HeroH1 = styled.h1``;
 
 const HeroInput = styled.input`
   border: none;
@@ -83,6 +81,6 @@ const HeroBtn = styled.button`
   color: white;
   border: none;
   border-radius: 50px;
-  background-color: var(--secondary);
+  background-color: rgb(53, 99, 108);
   padding: 20px;
 `;

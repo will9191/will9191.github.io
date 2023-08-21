@@ -69,6 +69,7 @@ const Project = styled(Link)`
   overflow: hidden;
   color: #000;
   transform: translateZ(0);
+
 `;
 
 const Img = styled.img`
@@ -80,9 +81,13 @@ const Img = styled.img`
   transition: transform 0.2s;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  text-align: center;
+`;
 
-const SubTitle = styled.h5``;
+const SubTitle = styled.h5`
+  text-align: center;
+`;
 
 const CardFooter = styled.div`
   position: absolute;

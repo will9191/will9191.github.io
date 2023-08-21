@@ -14,20 +14,28 @@ const HeroHome = () => {
           <Fa.FaAngleLeft /> Web Developer <Fa.FaAngleRight />
         </HeroH2>
         <HeroText>
-          I'm a brazilian 17 year old programmer, student at ETEC school and I'm
+          I'm a brazilian 18 year old programmer, student at ETEC school and I'm
           pursuing a career in the web developer business, looking to improve my
           programming performance, currently focusing on improving my knowledge
-          in ReactJs.
+          in MERN Stack.
         </HeroText>
         <HeroLinks>
           <HeroLink to='https://github.com/will9191' target='_blank'>
-            <Ai.AiFillGithub />
+            <HeroSpan>
+              <Ai.AiFillGithub />
+            </HeroSpan>
           </HeroLink>
           <HeroLink to='https://www.instagram.com/wfrnnd_/' target='_blank'>
-            <Ai.AiOutlineInstagram />
+            <HeroSpan>
+              {' '}
+              <Ai.AiOutlineInstagram />
+            </HeroSpan>
           </HeroLink>
           <HeroLink to='/contact'>
-            <Ai.AiOutlineMail />
+            <HeroSpan>
+              {' '}
+              <Ai.AiOutlineMail />
+            </HeroSpan>
           </HeroLink>
         </HeroLinks>
       </HeroLeft>
@@ -65,10 +73,7 @@ const HeroH1 = styled.h1`
 
 const HeroImg = styled.img`
   height: 70vh;
-`;
-
-const HeroP = styled.p`
-  font-size: 20px;
+  border-radius: 80px;
 `;
 
 const HeroText = styled.p`
@@ -85,11 +90,17 @@ const HeroText = styled.p`
 
 const HeroLinks = styled.div`
   display: flex;
-  
 `;
 const HeroLink = styled(Link)`
-  font-size: 80px;
-  color: rgb(53, 99, 108);
-  transform: scale(1.2);
+  display: flex;
+  font-size: 90px;
   padding: 20px;
+`;
+
+const HeroSpan = styled.span`
+  &:hover {
+    color: rgb(53, 99, 108);
+    transform: scale(1.2);
+    transition: 1s;
+  }
 `;

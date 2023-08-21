@@ -1,14 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Navbar = () => {
   return (
     <Nav>
-      <NavItem to='/'>Home</NavItem>
-      <NavItem to='/skills'>Skills</NavItem>
-      <NavItem to='/projects'>Projects</NavItem>
-      <NavItem to='/contact'>Contact</NavItem>
+      <NavLeft>Will<NavSpan>.</NavSpan></NavLeft>
+      <NavRight>
+        <NavItem to='/'>Home</NavItem>
+        <NavItem to='/skills'>Skills</NavItem>
+        <NavItem to='/projects'>Projects</NavItem>
+        <NavItem to='/contact'>Contact</NavItem>
+      </NavRight>
     </Nav>
   );
 };
@@ -17,12 +20,22 @@ export default Navbar;
 
 const Nav = styled.div`
   display: flex;
-  background-color: transparent;
+  justify-content: space-between;
   position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: 100%;
+  padding: 30px 100px;
+  align-items: center;
+  font-size: 50px;
 `;
+
+const NavLeft = styled(Link)``;
+
+const NavRight = styled.div`
+  display: flex;
+`;
+
+const NavSpan = styled.span` color: #ffffff;
+font-size: 70px;`
 
 const NavItem = styled(NavLink)`
   text-decoration: none;
@@ -40,7 +53,14 @@ const NavItem = styled(NavLink)`
   &:hover:after {
     transform: scaleX(1);
   }
+  &:hover {
+    color: rgb(53, 99, 108);
+  }
+
   &.active {
+    color: #fff;
+  }
+  &.active:hover {
     color: rgb(53, 99, 108);
   }
 `;

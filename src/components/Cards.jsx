@@ -3,12 +3,13 @@ import { styled } from 'styled-components';
 import Tools from '../app/tools.json';
 
 const Cards = () => {
+
+  
   return (
     <CardsContainer>
-      {Tools &&
-        Tools.map((tool) => {
-          return <CardImg src={tool.logo} />;
-        })}
+      {Tools.map((tool) => {
+        return <CardImg src={tool.logo} />;
+      })}
     </CardsContainer>
   );
 };
@@ -19,7 +20,6 @@ const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
-
 
 const CardImg = styled.img`
   height: 200px;
@@ -34,4 +34,5 @@ const CardImg = styled.img`
     transform: scale(1.1);
     cursor: pointer;
   }
+  box-shadow: 0px 12px 10px 3px rgba(0, 0, 0, 0.1);
 `;
