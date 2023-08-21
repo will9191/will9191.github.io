@@ -152,8 +152,8 @@ font-size: 70px;`,fo=O(g0)`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 `,Gg=O.img`
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 1px solid black;
   padding: 40px;
   border-radius: 10px;
@@ -177,6 +177,7 @@ font-size: 70px;`,fo=O(g0)`
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  max-height: 100%;
 `,Jg=O.button`
   position: absolute;
   top: 1.2rem;
@@ -249,6 +250,7 @@ font-size: 70px;`,fo=O(g0)`
   align-items: center;
 `,f1=O.div`
   display: flex;
+  max-width: 100%;
 `,fi=O(Cl)`
   display: flex;
   --blur: 16px;
