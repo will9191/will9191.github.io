@@ -45,6 +45,12 @@ const HeroContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    
+}
 `;
 
 const HeroH1 = styled.h1``;
@@ -52,11 +58,14 @@ const HeroH1 = styled.h1``;
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+}
 `;
 
 const CardImg = styled.img`
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 1px solid black;
   padding: 40px;
   border-radius: 10px;
@@ -82,6 +91,10 @@ const Popup = styled.div`
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  max-height: 100%;
+  @media only screen and (max-width: 768px) {
+    width: fit-content;
+  }
 `;
 
 const ClosePopup = styled.button`

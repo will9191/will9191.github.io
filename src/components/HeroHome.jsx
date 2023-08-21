@@ -53,23 +53,37 @@ const HeroContainer = styled.section`
   justify-content: space-evenly;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+}
 `;
 
 const HeroLeft = styled.div``;
 
 const HeroRight = styled.div``;
 
+const HeroH1 = styled.h1`
+  text-shadow: 3px 0px white;
+  font-size: 70px;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+}
+`;
+
 const HeroH2 = styled.h2`
   display: flex;
   font-size: 40px;
   color: rgb(53, 99, 108);
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+}
 `;
 
-const HeroH1 = styled.h1`
-  text-shadow: 3px 0px white;
-  font-size: 70px;
-`;
+
 
 const HeroImg = styled.img`
   height: 70vh;
@@ -86,10 +100,16 @@ const HeroText = styled.p`
   margin-left: 0;
   margin-right: 0;
   font-size: 20px;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+}
 `;
 
 const HeroLinks = styled.div`
   display: flex;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+}
 `;
 const HeroLink = styled(Link)`
   display: flex;

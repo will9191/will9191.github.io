@@ -55,10 +55,22 @@ const HeroContainer = styled.section`
   justify-content: space-evenly;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+}
 `;
 
 const Projects = styled.div`
   display: flex;
+  max-width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    height: fit-content;
+  
+    flex-direction: column;
+}
 `;
 
 const Project = styled(Link)`
@@ -69,7 +81,10 @@ const Project = styled(Link)`
   overflow: hidden;
   color: #000;
   transform: translateZ(0);
-
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    max-width: fit-content;
+}
 `;
 
 const Img = styled.img`
@@ -79,6 +94,7 @@ const Img = styled.img`
   transform: scale(calc(1 + (var(--hover, 0) * 0.25)))
     rotate(calc(var(--hover, 0) * -5deg));
   transition: transform 0.2s;
+  
 `;
 
 const Title = styled.h1`
