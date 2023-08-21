@@ -26,6 +26,10 @@ const Nav = styled.div`
   padding: 30px 100px;
   align-items: center;
   font-size: 50px;
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    padding: 20px;
+  }
 `;
 
 const NavLeft = styled(Link)``;
