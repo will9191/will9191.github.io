@@ -11,13 +11,13 @@ const HeroHome = () => {
       <HeroLeft>
         <HeroH1>Hi👋, I'm Willian</HeroH1>
         <HeroH2>
-          <Fa.FaAngleLeft /> Web Developer <Fa.FaAngleRight />
+          <Fa.FaAngleLeft /> Developer <Fa.FaAngleRight />
         </HeroH2>
         <HeroText>
-          I'm a brazilian 18 year old programmer, student at ETEC school and I'm
-          pursuing a career in the web developer business, looking to improve my
-          programming performance, currently focusing on improving my knowledge
-          in MERN Stack.
+          I am an 18 year old Brazilian programmer, Computer Science student and
+          I am looking to build my career in software development, seeking to
+          improve my skills. performance in programming, currently focusing on
+          improving my knowledge in Java and Typescript.
         </HeroText>
         <HeroLinks>
           <HeroLink to='https://github.com/will9191' target='_blank'>
@@ -25,10 +25,10 @@ const HeroHome = () => {
               <Ai.AiFillGithub />
             </HeroSpan>
           </HeroLink>
-          <HeroLink to='https://www.instagram.com/wfrnnd_/' target='_blank'>
+          <HeroLink to='https://www.linkedin.com/in/will9191/' target='_blank'>
             <HeroSpan>
               {' '}
-              <Ai.AiOutlineInstagram />
+              <Ai.AiOutlineLinkedin />
             </HeroSpan>
           </HeroLink>
           <HeroLink to='/contact'>
@@ -58,7 +58,7 @@ const HeroContainer = styled.section`
     height: fit-content;
     width: fit-content;
     flex-direction: column;
-}
+  }
 `;
 
 const HeroLeft = styled.div``;
@@ -70,7 +70,7 @@ const HeroH1 = styled.h1`
   font-size: 70px;
   @media only screen and (max-width: 768px) {
     text-align: center;
-}
+  }
 `;
 
 const HeroH2 = styled.h2`
@@ -80,10 +80,8 @@ const HeroH2 = styled.h2`
   align-items: center;
   @media only screen and (max-width: 768px) {
     text-align: center;
-}
+  }
 `;
-
-
 
 const HeroImg = styled.img`
   height: 70vh;
@@ -102,14 +100,14 @@ const HeroText = styled.p`
   font-size: 20px;
   @media only screen and (max-width: 768px) {
     text-align: center;
-}
+  }
 `;
 
 const HeroLinks = styled.div`
   display: flex;
   @media only screen and (max-width: 768px) {
     text-align: center;
-}
+  }
 `;
 const HeroLink = styled(Link)`
   display: flex;
