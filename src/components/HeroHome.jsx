@@ -14,7 +14,7 @@ const HeroHome = () => {
           <Fa.FaAngleLeft /> Developer <Fa.FaAngleRight />
         </HeroH2>
         <HeroText>
-          I am an 18 year old Brazilian programmer, Computer Science student and
+          I am an 18 year old Brazilian developer, Computer Science student and
           I am looking to build my career in software development, seeking to
           improve my skills. performance in programming, currently focusing on
           improving my knowledge in Java and Typescript.
