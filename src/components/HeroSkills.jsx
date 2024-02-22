@@ -12,7 +12,7 @@ const HeroSkills = () => {
 
   return (
     <HeroContainer>
-      <HeroH1> Click to know more about the tool!</HeroH1>
+      <HeroH1> Click to know more about the tools I know!</HeroH1>
       <Cards>
         {Tools.map((tool) => {
           return (
@@ -21,7 +21,7 @@ const HeroSkills = () => {
         })}
       </Cards>
       {popuptoggle && (
-        <PopupContainer onClick={changecontent}>
+        <PopupContainer>
           {popupcontent.map((tool) => {
             return (
               <Popup>
@@ -40,27 +40,25 @@ const HeroSkills = () => {
 export default HeroSkills;
 
 const HeroContainer = styled.section`
-  height: 100vh;
+  margin-top: 200px;
+  margin-bottom: 200px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media only screen and (max-width: 768px) {
-    height: fit-content;
-    width: fit-content;
-    flex-direction: column;
-    
-}
 `;
 
-const HeroH1 = styled.h1``;
+const HeroH1 = styled.h1`
+  margin-bottom: 25px;
+  font-size: 30px;
+`;
 
 const Cards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
-}
+  }
 `;
 
 const CardImg = styled.img`
@@ -121,7 +119,6 @@ const PopupText = styled.p`
 
 const PopupContainer = styled.div`
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;

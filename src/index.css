@@ -11,29 +11,22 @@
 }
 
 body {
-  z-index: 1;
-  background-image: linear-gradient(-45deg,
-      #a3a3a3,
-      #afafaf,
-      #bbbbbb,
-      #c8c7c8,
-      #d5d3d4,
-      #d9d7d8,
-      #dcdadb,
-      #e0dedf,
-      #dbdadb,
-      #d6d6d6,
-      #d1d1d2,
-      #cdcdcd);
-
-  height: 100vh;
-
-
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    height: 100%;
-  
-  }
+  background: linear-gradient(
+    -45deg,
+    #a3a3a3,
+    #afafaf,
+    #bbbbbb,
+    #c8c7c8,
+    #d5d3d4,
+    #d9d7d8,
+    #dcdadb,
+    #e0dedf,
+    #dbdadb,
+    #d6d6d6,
+    #d1d1d2,
+    #cdcdcd
+  );
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

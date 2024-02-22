@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import img from '../assets/will.jpg';
 import * as Fa from 'react-icons/fa';
 import * as Ai from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 
 const HeroHome = () => {
   return (
@@ -20,18 +19,24 @@ const HeroHome = () => {
           improving my knowledge in Java and Typescript.
         </HeroText>
         <HeroLinks>
-          <HeroLink to='https://github.com/will9191' target='_blank'>
+          <HeroLink href='https://github.com/will9191' target='_blank'>
             <HeroSpan>
               <Ai.AiFillGithub />
             </HeroSpan>
           </HeroLink>
-          <HeroLink to='https://www.linkedin.com/in/will9191/' target='_blank'>
+          <HeroLink
+            href='https://www.linkedin.com/in/will9191/'
+            target='_blank'
+          >
             <HeroSpan>
               {' '}
               <Ai.AiOutlineLinkedin />
             </HeroSpan>
           </HeroLink>
-          <HeroLink to='/contact'>
+          <HeroLink
+            href='mailto:willian.contato91@gmail.com?subject=Olá!'
+            target='_blank'
+          >
             <HeroSpan>
               {' '}
               <Ai.AiOutlineMail />
@@ -49,7 +54,7 @@ const HeroHome = () => {
 export default HeroHome;
 
 const HeroContainer = styled.section`
-  height: 100vh;
+  margin: 140px 0px;
   justify-content: space-evenly;
   display: flex;
   align-items: center;
@@ -109,7 +114,7 @@ const HeroLinks = styled.div`
     text-align: center;
   }
 `;
-const HeroLink = styled(Link)`
+const HeroLink = styled.a`
   display: flex;
   font-size: 90px;
   padding: 20px;

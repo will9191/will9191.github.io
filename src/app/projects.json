@@ -1,0 +1,133 @@
+[
+  {
+    "link": "https://github.com/will9191/Empreguei",
+    "title": "Empreguei",
+    "description": "TCC project build for job advertisement and hiring using Web",
+    "technologies": [
+      {
+        "name": "ReactJs"
+      },
+      {
+        "name": "NodeJs"
+      },
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "MongoDB"
+      },
+      {
+        "name": "ExpressJs"
+      }
+    ]
+  },
+  {
+    "link": "https://github.com/will9191/gymInfo-frontend",
+    "title": "GymInfo (Frontend)",
+    "description": "Project to consume backend API about exercises and auth",
+    "technologies": [
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "Typescript"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS"
+      }
+    ]
+  },
+  {
+    "link": "https://github.com/will9191/gymInfo-backend",
+    "title": "GymInfo (Backend)",
+    "description": "Using Auth and CRUD to build a simple api for list of exercises",
+    "technologies": [
+      {
+        "name": "Java"
+      },
+      {
+        "name": "Spring"
+      },
+      {
+        "name": "PostgreSQL"
+      },
+      {
+        "name": "Docker"
+      }
+    ]
+  },
+
+  {
+    "link": "https://github.com/will9191/WPFlix",
+    "title": "WPFlix",
+    "description": "Projected for Movies API",
+    "technologies": [
+      {
+        "name": "C#"
+      },
+      {
+        "name": "ASP.NET"
+      },
+      {
+        "name": "MySQL"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS"
+      }
+    ]
+  },
+  {
+    "link": "https://github.com/will9191/guessMyNumber",
+    "title": "Guess My Number",
+    "description": "Game where you guess a number between 1 and 20",
+    "technologies": [
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS"
+      }
+    ]
+  },
+  {
+    "link": "https://github.com/will9191/WorldCoronavirustest-main",
+    "title": "World Corona Virus",
+    "description": "Project developed to graphically display information about COVID-19 around the world and Brazil.",
+    "technologies": [
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS"
+      }
+    ]
+  },
+  {
+    "link": "https://github.com/will9191/modalWindow",
+    "title": "Modal Window",
+    "description": "Project developed to create animations when opening and closing windows with content",
+    "technologies": [
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS"
+      }
+    ]
+  }
+]
