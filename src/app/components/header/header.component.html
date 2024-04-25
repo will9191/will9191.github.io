@@ -1,0 +1,14 @@
+<div class="flex justify-between items-center px-20 py-10 fixed w-full max-lg:absolute max-lg:hidden">
+  <div class="text-7xl italic font-black uppercase max-lg:text-5xl ">
+    <a href="#">Will</a>
+  </div>
+  <div>
+    <ul class="flex space-x-6 ">
+      @for (link of links; track $index) {
+      <li class="">
+        <a href="{{ link.dest }}" class="text-3xl">{{ link.name }}</a>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

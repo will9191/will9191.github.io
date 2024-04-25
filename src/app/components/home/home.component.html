@@ -1,0 +1,15 @@
+<div class="flex items-center justify-center gap-32 text-center h-screen max-lg:flex-col max-sm:gap-12">
+  <div>
+    <p class="text-9xl mb-4 max-lg:text-7xl">Hi, I'm Willian 👋</p>
+    <p class="text-secondary text-5xl mb-6">< Full Stack Developer ></p>
+    <div class="flex space-x-6 justify-center">
+      @for (socialLink of socialLinks; track $index) {<a
+        href="{{ socialLink.link }}" target="_blank" class="hover:scale-110 duration-150 "
+      >
+        <img src="{{ socialLink.img }}" class="w-14"
+      /></a>
+      }
+    </div>
+  </div>
+  <img class="w-1/4 max-lg:w-64" src="{{ will }}" alt="" />
+</div>
