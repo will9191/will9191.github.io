@@ -1,5 +1,38 @@
-<app-header></app-header>
-<app-home></app-home>
-<app-about></app-about>
+<swiper-container
+  pagination="true"
+  pagination-clickable="true"
+  style="
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 14px;
+  "
+>
+  <swiper-slide><app-home></app-home></swiper-slide>
+  <swiper-slide><app-about></app-about></swiper-slide>
+  <swiper-slide>
+    <swiper-container
+      pagination="true"
+      pagination-clickable="true"
+      direction="vertical"
+    >
+      <swiper-slide>
+        <div
+          class="flex flex-col text-center justify-center items-center text-7xl max-lg:px-10"
+        >
+          <h2>My Projects</h2>
+          <div>Swipe to see</div>
+          <ng-icon name="heroChevronDown"></ng-icon>
+        </div>
+      </swiper-slide>
+      @for (project of projects; track $index) {
+      <swiper-slide
+        ><app-project [project]="project"></app-project
+      ></swiper-slide>
+      }
+    </swiper-container>
+  </swiper-slide>
+
+  <swiper-slide><app-skills></app-skills></swiper-slide>
+</swiper-container>
+
 <app-projects></app-projects>
-<app-skills></app-skills>

@@ -11,26 +11,24 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   developmentImg = 'assets/skills/softwareDevelopment.png';
   designBg = 'assets/skills/design.png';
-  learningBg = 'assets/skills/learning.jpeg'
+  learningBg = 'assets/skills/learning.jpeg';
 
   skills = [
-    {
-      title: 'Design',
-      desc: 'Using tools like Figma, Photoshop and Illustrator, I can create prototypes for projects to have the better visual experience!',
-      titleBg: this.designBg,
-      
-    },
     {
       title: 'Software Development',
       desc: 'My principal skill is to develop apps looking for the best business logic, security, user experience, and responsive interface!',
       titleBg: this.developmentImg,
-      
     },
+    {
+      title: 'Design',
+      desc: 'Using tools like Figma, Photoshop and Illustrator, I can create prototypes for projects to have the better visual experience!',
+      titleBg: this.designBg,
+    },
+
     {
       title: 'Desire to Learn',
       desc: 'Being better every day is something that I like and is essential for me, and I am sure that it is an essential skill in my life, whether personally or professionally.',
       titleBg: this.learningBg,
-     
     },
   ];
 }

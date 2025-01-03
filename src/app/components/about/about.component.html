@@ -1,22 +1,23 @@
 <div
-  id="about"
-  class="h-screen items-center flex flex-col justify-center max-lg:h-full"
+  class="h-screen items-center flex flex-col justify-center gap-20 max-lg:gap-6 max-lg:pb-10"
 >
-  <p class="uppercase text-4xl mb-10">About Me</p>
-  <p class="text-3xl w-3/5 break-keep mb-20 max-lg:text-2xl max-lg:w-full max-lg:text-center">
+  <p class="uppercase text-4xl">About Me</p>
+  <p
+    class="text-3xl px-96 break-keep max-lg:text-2xl max-lg:w-full text-justify max-lg:px-5"
+  >
     I am an 18 year old Brazilian developer, Computer Science student and I am
     looking to build my career in software development, seeking to improve my
     skills and performance in coding. Here's the main technologies that I've
     been using:
   </p>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center gap-5">
     <div
-      class="flex items-center space-x-10 mb-6 max-lg:grid max-lg:grid-cols-3 max-lg:space-x-0 max-lg:gap-5"
+      class="flex items-center space-x-10 max-lg:grid max-lg:grid-cols-3 max-lg:space-x-0 max-lg:gap-5"
     >
       @for (tech of primaryTechs; track $index) {
       <img
         (click)="openDialog(tech)"
-        class="w-40 hover:scale-125 hover:duration-500 duration-500 cursor-pointer max-lg:w-20"
+        class="w-40 max-lg:w-16 hover:scale-125 hover:duration-500 duration-500 cursor-pointer"
         src="{{ tech.img }}"
         alt="{{ tech.name }}"
       />
@@ -28,7 +29,7 @@
       @for (secTech of secondaryTechs; track $index) {
       <img
         (click)="openDialog(secTech)"
-        class="w-20 hover:scale-125 hover:duration-500 duration-500 cursor-pointer max-lg:w-8"
+        class="w-20 max-lg:w-8 hover:scale-125 hover:duration-500 duration-500 cursor-pointer"
         src="{{ secTech.img }}"
         alt="{{ secTech.name }}"
       />

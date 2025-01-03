@@ -2,25 +2,24 @@ import { Component } from '@angular/core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { PopupComponent } from '../popup/popup.component';
 
-const javaImg = 'assets/primaryTechs/java.svg';
-const springImg = 'assets/primaryTechs/spring.svg';
-const angularImg = 'assets/primaryTechs/angular.svg';
-const typescriptImg = 'assets/primaryTechs/typescript.svg';
-const postgresqlImg = 'assets/primaryTechs/postgresql.svg';
-const dockerImg = 'assets/primaryTechs/docker.svg';
-
-const htmlImg = 'assets/secondaryTechs/html.svg';
-const tailwindImg = 'assets/secondaryTechs/tailwind.svg';
-const cssImg = 'assets/secondaryTechs/css.svg';
-const csharpImg = 'assets/secondaryTechs/csharp.svg';
-const aspnetImg = 'assets/secondaryTechs/aspnet.svg';
-const javascriptImg = 'assets/secondaryTechs/javascript.svg';
-const reactImg = 'assets/secondaryTechs/react.svg';
-const expressImg = 'assets/secondaryTechs/express.svg';
-const mongodbImg = 'assets/secondaryTechs/mongodb.svg';
-const nodejsImg = 'assets/secondaryTechs/nodejs.svg';
-const mysqlImg = 'assets/secondaryTechs/mysql.svg';
-const bootstrapImg = 'assets/secondaryTechs/bootstrap.svg';
+const javaImg = 'assets/techs/java.svg';
+const springImg = 'assets/techs/spring.svg';
+const angularImg = 'assets/techs/angular.svg';
+const typescriptImg = 'assets/techs/typescript.svg';
+const postgresqlImg = 'assets/techs/postgresql.svg';
+const dockerImg = 'assets/techs/docker.svg';
+const htmlImg = 'assets/techs/html.svg';
+const tailwindImg = 'assets/techs/tailwind.svg';
+const cssImg = 'assets/techs/css.svg';
+const csharpImg = 'assets/techs/csharp.svg';
+const aspnetImg = 'assets/techs/aspnet.svg';
+const javascriptImg = 'assets/techs/javascript.svg';
+const reactImg = 'assets/techs/react.svg';
+const expressImg = 'assets/techs/express.svg';
+const mongodbImg = 'assets/techs/mongodb.svg';
+const nodejsImg = 'assets/techs/nodejs.svg';
+const mysqlImg = 'assets/techs/mysql.svg';
+const bootstrapImg = 'assets/techs/bootstrap.svg';
 
 @Component({
   selector: 'app-about',
