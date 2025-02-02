@@ -74,7 +74,7 @@ export class AppComponent {
       ],
       images: ['assets/wclothing/deploy.png', 'assets/wclothing/code.png'],
       doc: 'https://github.com/will9191/ecommerce-doc',
-      deploy: 'http://wclothing.s3-website.us-east-2.amazonaws.com/',
+      deploy: '',
       techs: [
         javaImg,
         springImg,
