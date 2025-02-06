@@ -12,7 +12,7 @@ const gmailIcon = 'assets/gmail.svg';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  will = 'assets/will.jpg';
+  will = 'assets/will.jpeg';
   socialLinks = [
     {
       id: 1,
