@@ -1,0 +1,19 @@
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    min-width: max-content;
+    max-width: min-content;
+}

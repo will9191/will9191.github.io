@@ -1,13 +1,5 @@
-@use '@angular/material' as mat;
-
-@include mat.core();
-
-/* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --primary-color: white;
   --secondary-color: #9b0000;
@@ -19,16 +11,24 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: var(--tertiary-color);
+  background-image: linear-gradient(to right top, #020202, #060606, #0a0a0a, #0e0e0e, #111111);
   color: var(--primary-color);
   margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
+
+* {
+  text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -41,6 +41,6 @@ html {
   border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb:window-inactive{
-  background: rgba(255,0,0,0.4); 
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
 }

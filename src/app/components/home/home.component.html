@@ -1,21 +1,14 @@
-<div
-  class="flex items-center justify-center gap-32 text-center h-screen max-lg:flex-col max-lg:gap-10"
->
-  <div>
-    <p class="text-9xl mb-4 max-lg:text-6xl">Hi, I'm Willian 👋</p>
-    <p class="text-secondary text-5xl mb-6 max-lg:text-4xl">
-      < Full Stack Developer >
+<div class="container">
+  <div class="left">
+    <p class="">Hi, I'm Willian 👋</p>
+    <p class="contrast">
+      < Software Developer>
     </p>
-    <div class="flex space-x-6 justify-center">
-      @for (socialLink of socialLinks; track $index) {<a
-        href="{{ socialLink.link }}"
-        target="_blank"
-        class="hover:scale-110 duration-150"
-      >
-        <img src="{{ socialLink.img }}" class="w-14 max-lg:w-10"
-      /></a>
+    <div class="social-medias">
+      @for (socialLink of socialLinks; track $index) {<a href="{{ socialLink.link }}" target="_blank" class="">
+        <img src="{{ socialLink.img }}" class="social-media" /></a>
       }
     </div>
   </div>
-  <img class="w-1/4 max-lg:w-64 rounded-3xl" src="{{ will }}" alt="" />
+  <img class="img" src="{{ will }}" alt="img" />
 </div>

@@ -1,0 +1,6 @@
+<nav class="nav">
+    @for (item of nav; track $index) {
+    <div class="nav-item" [routerLink]="item.link">{{item.name}}</div>
+    }
+</nav>
+<router-outlet></router-outlet>

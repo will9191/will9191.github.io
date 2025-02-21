@@ -1,0 +1,25 @@
+.container {
+    justify-items: center;
+    padding: 5em 0 0;
+}
+
+.text {
+    width: 70%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.techs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.pri-img {
+    width: 8em;
+}
+
+.sec-img {
+    width: 3em;
+}

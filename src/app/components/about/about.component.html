@@ -1,39 +1,10 @@
-<div
-  class="h-screen items-center flex flex-col justify-center gap-20 max-lg:gap-6 max-lg:pb-10"
->
-  <p class="uppercase text-4xl">About Me</p>
-  <p
-    class="text-3xl px-96 break-keep max-lg:text-2xl max-lg:w-full text-justify max-lg:px-5"
-  >
-    I am an 18 year old Brazilian developer, Computer Science student and I am
+<div class="">
+  <p class="">About Me</p>
+  <p class="">
+    I am an 19 year old Brazilian developer, Computer Science student and I am
     looking to build my career in software development, seeking to improve my
     skills and performance in coding. Here's the main technologies that I've
     been using:
   </p>
-  <div class="flex flex-col items-center gap-5">
-    <div
-      class="flex items-center space-x-10 max-lg:grid max-lg:grid-cols-3 max-lg:space-x-0 max-lg:gap-5"
-    >
-      @for (tech of primaryTechs; track $index) {
-      <img
-        (click)="openDialog(tech)"
-        class="w-40 max-lg:w-16 hover:scale-125 hover:duration-500 duration-500 cursor-pointer"
-        src="{{ tech.img }}"
-        alt="{{ tech.name }}"
-      />
-      }
-    </div>
-    <div
-      class="flex space-x-8 max-lg:grid max-lg:grid-cols-6 grid-f max-lg:w-full max-lg:space-x-0 max-lg:gap-5"
-    >
-      @for (secTech of secondaryTechs; track $index) {
-      <img
-        (click)="openDialog(secTech)"
-        class="w-20 max-lg:w-8 hover:scale-125 hover:duration-500 duration-500 cursor-pointer"
-        src="{{ secTech.img }}"
-        alt="{{ secTech.name }}"
-      />
-      }
-    </div>
-  </div>
+
 </div>
