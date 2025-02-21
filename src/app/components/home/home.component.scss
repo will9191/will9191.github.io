@@ -1,34 +1,35 @@
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    font-size: 3em;
-    padding: 0em 2em;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  font-size: 3em;
+  padding: 0em 2em;
 }
 
 .left {
-    text-align: center;
+  text-align: center;
 }
 
 .contrast {
-    color: rgb(146, 0, 0);
-    font-weight: 700;
+  color: rgb(146, 0, 0);
+  font-weight: 700;
 }
 
 .img {
-    display: flex;
-    width: 8em;
-    border-radius: 20px;
+  display: flex;
+  width: 8em;
+  border-radius: 20px;
+  justify-self: center;
 }
 
 .social-medias {
-    gap: .6em;
-    display: flex;
-    justify-content: center;
+  gap: 0.6em;
+  display: flex;
+  justify-content: center;
 }
 
 .social-media:hover {
-    scale: 1.25;
-    animation: linear 1s;
+  scale: 1.25;
+  animation: linear 1s;
 }

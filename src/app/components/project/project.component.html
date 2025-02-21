@@ -1,24 +1,30 @@
-<div class="project">
-  <div class="">{{ project.title }}</div>
+<div class="project-container">
+  <div class="title">{{ project.title }}</div>
 
-  <div class="">
-    <swiper-container class="swiper-container" pagination="true" navigation="true">
-      @for (image of project.images; track $index) {
-      <swiper-slide class="swiper-slide">
-        <img class="project-img" src="{{ image }}" alt="" />
-      </swiper-slide>
-      }
-    </swiper-container>
-  </div>
+  <swiper-container
+    pagination="true"
+    pagination-clickable="true"
+    style="
+      --swiper-pagination-bullet-inactive-color: rgb(150, 150, 150);
+      --swiper-pagination-bullet-inactive-opacity: 1;
+      --swiper-pagination-bullet-size: 6px;
+    "
+    class="swiper-container"
+  >
+    @for (image of project.images; track $index) {
+    <swiper-slide class="swiper-slide">
+      <img class="project-img" src="{{ image }}" alt="" />
+    </swiper-slide>
+    }
+  </swiper-container>
 
-  <div class="">
-    <a href="{{ project.doc }}" target="_blank" class="r">
-      📄 Documentation
-    </a>
-    <a href="{{ project.deploy }}" target="_blank" [className]="
-        project.deploy != ''
-          ? ' '
-          : ''
-      " class="">🌐 Deploy</a>
+  <div class="icons">
+    <a href="{{ project.doc }}" target="_blank"> 📄 </a>
+    <a
+      href="{{ project.deploy }}"
+      target="_blank"
+      [className]="project.deploy != '' ? 'click' : 'not-available'"
+      >🌐</a
+    >
   </div>
 </div>
