@@ -1,30 +1,45 @@
 <div class="project-container">
   <div class="title">{{ project.title }}</div>
-
-  <swiper-container
-    pagination="true"
-    pagination-clickable="true"
-    style="
-      --swiper-pagination-bullet-inactive-color: rgb(150, 150, 150);
-      --swiper-pagination-bullet-inactive-opacity: 1;
-      --swiper-pagination-bullet-size: 6px;
-    "
-    class="swiper-container"
-  >
-    @for (image of project.images; track $index) {
-    <swiper-slide class="swiper-slide">
-      <img class="project-img" src="{{ image }}" alt="" />
-    </swiper-slide>
-    }
-  </swiper-container>
-
+  <div class="middle-container">
+    <swiper-container
+      pagination="true"
+      pagination-clickable="true"
+      style="
+        --swiper-pagination-bullet-inactive-color: rgb(150, 150, 150);
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-pagination-bullet-size: 10px;
+      "
+      class="swiper-container"
+      slides-per-view="1"
+    >
+      @for (image of project.images; track $index) {
+      <swiper-slide class="swiper-slide">
+        <img class="project-img" src="{{ image }}" alt="" />
+      </swiper-slide>
+      }
+    </swiper-container>
+    <div class="right">
+      <div class="descriptions">
+        @for (description of project.description; track $index) {
+        <div>
+          {{ description }}
+        </div>
+        }
+      </div>
+      <div class="techs">
+        @for (tech of project.techs; track $index) {
+        <img (click)="openDialog(tech)" class="tech" src="{{ tech.img }}" alt="" />
+        }
+      </div>
+    </div>
+  </div>
   <div class="icons">
-    <a href="{{ project.doc }}" target="_blank"> 📄 </a>
+    <a href="{{ project.doc }}" target="_blank"> 📄Documentation</a>
     <a
       href="{{ project.deploy }}"
       target="_blank"
       [className]="project.deploy != '' ? 'click' : 'not-available'"
-      >🌐</a
+      >🌐Deploy</a
     >
   </div>
 </div>
