@@ -92,7 +92,7 @@ export class ProjectsComponent {
       description: [
         "'Empreguei' was a TCC project I worked on, where we developed a job board website to connect employers and job seekers. The platform allowed companies to post job openings with detailed requirements and benefits, while users could search and apply for jobs based on criteria like job title and location.",
         'Job seekers could filter results according to their preferences, making it easier to find relevant opportunities. The platform also featured a user dashboard to track application status.',
-        "An administrative panel was included for managing job postings, users, and other operations, ensuring the platform ran smoothly and content was well-organized. 'Empreguei' offered a practical and efficient solution for both employers and job seekers.",
+        
       ],
       images: ['assets/empreguei/deploy.jpeg', 'assets/empreguei/code.png'],
       doc: 'https://github.com/will9191/Empreguei',
@@ -214,7 +214,7 @@ export class ProjectsComponent {
       id: 19,
       name: 'AWS',
       img: awsImg,
-      text: 'Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms.',
+      text: 'Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.',
     },
     {
       id: 20,

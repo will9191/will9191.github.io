@@ -15,9 +15,11 @@ import { PopupComponent } from '../popup/popup.component';
 export class ProjectComponent {
   @Input() public project: any;
 
-  constructor(private dialogRef: MatDialog) {}
+  constructor(private dialogRef: MatDialog) { }
 
   openDialog(data: any) {
+    document.body.classList.add("cdk-global-scrollblock");
     this.dialogRef.open(PopupComponent, { data: data });
+    
   }
 }

@@ -16,19 +16,12 @@ export class PopupComponent implements OnInit, OnDestroy {
     private dialogRef: MatDialog
   ) {}
 
-  id!: string;
-  img!: string;
-  text!: string;
-
   ngOnInit(): void {
-    this.id = this.data.id;
-    this.img = this.data.img;
-    this.text = this.data.text;
-    this._renderer.setStyle(document.body, 'overflow-y', 'hidden');
+    this._renderer.setStyle(document.body, 'overflow', 'hidden');
   }
 
   ngOnDestroy(): void {
-    this._renderer.removeStyle(document.body, 'overflow-y');
+    this._renderer.removeStyle(document.body, 'overflow');
   }
 
   closeDialog() {

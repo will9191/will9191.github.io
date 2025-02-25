@@ -17,10 +17,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 100vh;
-
+  box-sizing: border-box;
 }
 
- a {
+a {
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -30,7 +30,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
