@@ -1,10 +1,13 @@
 <div class="project-container">
   <div class="title">{{ project.title }}</div>
   <div class="middle-container">
-    <swiper-container pagination="true" pagination-clickable="true" style="
+    <swiper-container pagination="true" pagination-clickable="true" navigation="true" style="
         --swiper-pagination-bullet-inactive-color: rgb(150, 150, 150);
         --swiper-pagination-bullet-inactive-opacity: 1;
-        --swiper-pagination-bullet-size: 10px;
+        --swiper-pagination-color:var(--secondary-color);
+        --swiper-pagination-bullet-size: 8px;
+        --swiper-navigation-color:var(--secondary-color);
+        --swiper-navigation-size: 25px;
       " class="swiper-container" slides-per-view="1">
       @for (image of project.images; track $index) {
       <swiper-slide class="swiper-slide">
