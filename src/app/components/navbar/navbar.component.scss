@@ -28,6 +28,8 @@
     }
 }
 
-.nav-item:hover {
-    color: var(--secondary-color);
+@media all and (min-width:1200px) {
+    .nav-item:hover {
+        color: var(--secondary-color);
+    }
 }

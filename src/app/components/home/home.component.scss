@@ -6,11 +6,12 @@
   font-size: 3em;
   padding: 0em 2em;
   align-content: center;
+
   @media not all and (min-width:1200px) {
     grid-template-columns: 1fr;
     font-size: 2.2em;
     gap: 1em;
-
+    padding: 0;
   }
 }
 
