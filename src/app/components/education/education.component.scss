@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8em 5em 0;
+    gap: 3em;
+
+    @media not all and (min-width:1200px) {
+        grid-template-columns: 1fr;
+        padding: 2em 5em 8em;
+    }
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+
+}
+
+.title {
+    font-size: 2em;
+}
+
+.sub-title {
+    font-size: 1.5em;
+    opacity: 0.85;
+
+    @media not all and (min-width:1200px) {
+        text-align: justify;
+        text-align-last: center;
+    }
+}

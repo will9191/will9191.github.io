@@ -1,0 +1,9 @@
+<div class="container">
+    @for (item of education; track $index) {
+    <div class="education">
+        <img src="{{item.img}}" alt="">
+        <div class="title">{{item.name}}</div>
+        <div class="sub-title">{{item.description}}</div>
+    </div>
+    }
+</div>

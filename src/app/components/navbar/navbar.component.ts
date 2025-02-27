@@ -18,8 +18,8 @@ export class NavbarComponent {
       name: "projects",
       link: "projects"
     }, {
-      name: "stack",
-      link: "stack"
+      name: "education",
+      link: "education"
     },
   ]
 }

@@ -1,8 +1,14 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
 @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 
 :root {
   --primary-color: white;
-  --secondary-color: #9b0000;
+  --secondary-color: rgb(117, 0, 0);
   --tertiary-color: #111111;
 }
 
@@ -38,10 +44,11 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9b0000;
+  background: var(--secondary-color);
+
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255, 0, 0, 0.4);
+  background: var(--secondary-color);
 }

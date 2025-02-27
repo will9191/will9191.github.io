@@ -6,12 +6,26 @@
     left: 0;
     right: 0;
     backdrop-filter: blur(25px);
+    z-index: 40;
+
+    @media not all and (min-width:1200px) {
+        bottom: 0;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+        border-top: 1px solid var(--primary-color);
+    }
 }
 
 .nav-item {
     cursor: pointer;
     font-size: 1.7em;
     padding: 1em 0;
+
+    @media not all and (min-width:1200px) {
+        padding: 0.32em 0;
+    }
 }
 
 .nav-item:hover {

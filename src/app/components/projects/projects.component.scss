@@ -1,3 +1,7 @@
 .projects {
   padding: 0em 3em;
+
+  @media not all and (min-width:1200px) {
+    padding: 0 3em 3.5em;
+  }
 }

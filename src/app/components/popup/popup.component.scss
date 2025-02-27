@@ -7,6 +7,7 @@
   top: 0;
   bottom: 0;
   z-index: 50;
+
 }
 
 .wrapper {
@@ -15,11 +16,21 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+
+  @media not all and (min-width:1200px) {
+    width: 100%;
+
+  }
+
 }
 
 .popup {
   background: var(--primary-color);
   position: fixed;
+
+  @media not all and (min-width:1200px) {
+    width: 100%;
+  }
 }
 
 .close-btn {
@@ -28,11 +39,16 @@
   background: transparent;
   color: var(--tertiary-color);
   font-weight: 900;
+  top: 0;
   right: 0.5em;
   cursor: pointer;
   user-select: none;
   outline: none;
   border: none;
+
+  @media not all and (min-width: 1200px) {
+    font-size: 3em;
+  }
 }
 
 .center {
@@ -42,15 +58,34 @@
   justify-content: center;
   padding: 5em;
   gap: 2.5em;
+
+  @media not all and (min-width:1200px) {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    gap: 2em;
+
+  }
 }
 
 .img {
   width: 15em;
   height: 15em;
+
+  @media not all and (min-width:1200px) {
+    width: 5em;
+    height: auto;
+  }
 }
 
 .text {
   color: var(--tertiary-color);
   font-size: 2.25em;
   width: 24em;
+
+  @media not all and (min-width:1200px) {
+    width: 100vw;
+    font-size: 2em;
+    padding: 0 2em;
+  }
 }
