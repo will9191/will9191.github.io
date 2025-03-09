@@ -33,6 +33,10 @@
   user-select: none;
   outline: none;
   border: none;
+  @media not all and (min-width: 1200px) {
+ font-size: 5em;
+ right: 1.2em;
+  }
 }
 
 .center {
@@ -42,15 +46,25 @@
   justify-content: center;
   padding: 5em;
   gap: 2.5em;
+  @media not all and (min-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .img {
   width: 24em;
   height: 24em;
+  @media not all and (min-width: 1200px) {
+    width: 12em;
+    height: 12em;
+  }
 }
 
 .text {
   color: var(--tertiary-color);
   font-size: 2.25em;
   width: 24em;
+  @media not all and (min-width: 1200px) {
+    font-size: 1em;
+  }
 }
