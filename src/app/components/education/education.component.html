@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="title">Education</div>
+  <div class="educations">
+    @for (ed of educations; track $index) {
+    <div class="education">
+      <div class="left">
+        <img class="img" src="{{ ed.img }}" alt="" />
+        <div>
+          <div class="top">
+            <div class="name">{{ ed.name }}</div>
+            <a class="link" href="{{ ed.link }}" target="_blank"
+              ><ng-icon name="letsExternal"></ng-icon
+            ></a>
+          </div>
+          <div class="course">
+            {{ ed.course }}
+          </div>
+        </div>
+      </div>
+      <div class="time">{{ ed.startTime }} - {{ ed.endTime }}</div>
+    </div>
+    }
+  </div>
+</div>

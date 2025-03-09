@@ -1,0 +1,50 @@
+.container {
+ 
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.education {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.left {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.img {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.course {
+  opacity: 0.8;
+}
+
+.time {
+  justify-self: end;
+  float: inline-end;
+  display: flex;
+  opacity: 0.7;
+}

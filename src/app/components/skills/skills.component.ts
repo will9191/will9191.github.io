@@ -1,87 +1,22 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
-import { NgIconComponent, provideIcons } from '@ng-icons/core';
-import { heroChevronDown } from '@ng-icons/heroicons/outline';
-import { PopupComponent } from '../popup/popup.component';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-
-export interface Project {
-  id: number;
-  title: string;
-  description: string;
-  images: string[];
-  doc: string;
-  deploy: string;
-  techs: any; // Permite qualquer tipo de dado (array de números ou objetos)
-}
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-skills',
   standalone: true,
-  imports: [NgIconComponent],
-  viewProviders: [
-    provideIcons({
-      heroChevronDown,
-    }),
-  ],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [],
+  templateUrl: './skills.component.html',
+  styleUrl: './skills.component.scss',
 })
-export class ProjectsComponent {
+export class SkillsComponent {
   @Input() public project: any;
 
-  constructor(private dialogRef: MatDialog) {
-    this.getProjects();
-  }
+  constructor(private dialogRef: MatDialog) {}
 
   openDialog(data: any) {
     this.dialogRef.open(PopupComponent, { data: data });
   }
-
-  javaImg = 'assets/techs/java.svg';
-  eyeSvg = 'assets/eye.svg';
-  infoSvg = 'assets/info.svg';
-  devIcon = '</>';
-
-  empregueiCodeImg = 'assets/empreguei/code.png';
-  empregueiDeployImg = 'assets/empreguei/deploy.jpeg';
-
-  getProjects() {
-    // Criar um mapa de tecnologias para acesso rápido por ID
-    const techMap = new Map(this.techs.map((t) => [t.id, t]));
-
-    // Atualizar os projetos para incluir objetos inteiros de tecnologia
-    this.projects = this.projects.map((project) => ({
-      ...project,
-      techs: project.techs.map((id: number) => techMap.get(id)), // Substitui os IDs pelos objetos completos
-    }));
-
-    return this.projects;
-  }
-
-  projects: Project[] = [
-    {
-      id: 1,
-      title: 'W Clothing',
-      description:
-        'The e-commerce system offers features like user authentication, product filtering, sorting, reviews, real-time payment updates, and efficient cart management. It also supports address handling and a favorites section.',
-      images: ['assets/wclothing/deploy.png', 'assets/wclothing/code.png'],
-      doc: 'https://github.com/will9191/ecommerce-doc',
-      deploy: '',
-      techs: [1, 2, 3, 4, 5, 6, 7, 8, 19, 20],
-    },
-    {
-      id: 2,
-      title: 'Empreguei',
-      description:
-        'Job board website to connect employers and job seekers. Companies post job openings with detailed requirements and benefits, while users can search and apply for jobs based job title and location.',
-
-      images: ['assets/empreguei/deploy.jpeg', 'assets/empreguei/code.png'],
-      doc: 'https://github.com/will9191/Empreguei',
-      deploy: '',
-      techs: [12, 13, 14, 15, 16, 7, 9],
-    },
-  ];
 
   techs = [
     {

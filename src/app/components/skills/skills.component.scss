@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 3em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  justify-items: left;
+}
+
+.tech {
+  border: 1px solid gray;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  font-size: 0.95em;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

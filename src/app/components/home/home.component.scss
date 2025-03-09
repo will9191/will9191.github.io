@@ -1,35 +1,43 @@
 .container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  display: flex;
+  align-items: start;
   font-size: 3em;
-  padding: 0em 2em;
+  justify-content: center;
 }
 
 .left {
-  text-align: center;
-}
-
-.contrast {
-  color: rgb(146, 0, 0);
-  font-weight: 700;
+  text-align: left;
 }
 
 .img {
   display: flex;
-  width: 8em;
-  border-radius: 20px;
-  justify-self: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 0.5em;
 }
 
 .social-medias {
-  gap: 0.6em;
+  gap: 0.3em;
   display: flex;
-  justify-content: center;
+}
+
+.social-media {
+  width: 0.8em;
+  opacity: 0.8;
 }
 
 .social-media:hover {
-  scale: 1.25;
-  animation: linear 1s;
+  scale: 1.15;
+  transition: all 0.1s ease-in;
 }
