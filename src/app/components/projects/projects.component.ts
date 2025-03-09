@@ -35,7 +35,7 @@ export class ProjectsComponent {
   }
 
   openDialog(data: any) {
-    this.dialogRef.open(PopupComponent, { data: data, });
+    this.dialogRef.open(PopupComponent, { data: data });
   }
 
   javaImg = 'assets/techs/java.svg';

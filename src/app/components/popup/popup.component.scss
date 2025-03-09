@@ -23,7 +23,7 @@
 }
 
 .close-btn {
-  font-size: 8em;
+  font-size: 5em;
   position: absolute;
   background: transparent;
   color: var(--tertiary-color);
@@ -34,8 +34,8 @@
   outline: none;
   border: none;
   @media not all and (min-width: 1200px) {
- font-size: 5em;
- right: 1.2em;
+    font-size: 5em;
+    right: 1.2em;
   }
 }
 
