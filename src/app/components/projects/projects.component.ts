@@ -62,6 +62,16 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       id: 1,
+      title: 'W Pizza',
+      description:
+        'Pizzaria Web Management and Mobile for clients to make orders',
+      images: ['assets/wpizza/1.png', 'assets/wpizza/2.png'],
+      doc: 'https://github.com/will9191/w-pizza',
+      deploy: '',
+      techs: [1, 2, 3, 4, 5, 6, 7, 20],
+    },
+    {
+      id: 2,
       title: 'W Clothing',
       description:
         'The e-commerce system offers features like user authentication, product filtering, sorting, reviews, real-time payment updates, and efficient cart management. It also supports address handling and a favorites section.',
@@ -71,7 +81,7 @@ export class ProjectsComponent {
       techs: [1, 2, 3, 4, 5, 6, 7, 8, 19, 20],
     },
     {
-      id: 2,
+      id: 3,
       title: 'Empreguei',
       description:
         'Job board website to connect employers and job seekers. Companies post job openings with detailed requirements and benefits, while users can search and apply for jobs based job title and location.',
