@@ -62,11 +62,11 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       id: 1,
-      title: 'W Pizza',
+      title: 'Multi Taste',
       description:
-        'Pizzaria Web Management and Mobile for clients to make orders',
+        'Web Management and Mobile for clients to make food orders',
       images: ['assets/wpizza/1.png', 'assets/wpizza/2.png'],
-      doc: 'https://github.com/will9191/w-pizza',
+      doc: 'https://github.com/will9191/multi-taste',
       deploy: '',
       techs: [1, 2, 3, 4, 5, 6, 7, 20],
     },
