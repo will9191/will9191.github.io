@@ -93,11 +93,30 @@ export class ProjectsComponent {
       title: 'Empreguei',
       description:
         'Job board website to connect employers and job seekers. Companies post job openings with detailed requirements and benefits, while users can search and apply for jobs based job title and location.',
-
       images: ['assets/empreguei/deploy.jpeg', 'assets/empreguei/code.png'],
       doc: 'https://github.com/will9191/Empreguei',
       deploy: '',
       techs: [12, 13, 14, 15, 16, 7, 9],
+    },
+    {
+      id: 4,
+      title: 'Guess My Number',
+      description:
+        'Simple game to guess random numbers! It tells you how close you are to guessing it right!.',
+      images: ['assets/guess-my-number/1.png', 'assets/guess-my-number/2.png','assets/guess-my-number/3.png'],
+      doc: 'https://github.com/will9191/guessMyNumber',
+      deploy: 'https://guess-my-number-teal-two.vercel.app/',
+      techs: [7, 9, 12],
+    },
+    {
+      id: 5,
+      title: 'Snake Game',
+      description:
+        'Want to play a simple and vicious snake game? This desktop app allow you to!',
+      images: ['assets/snake-game/1.png', 'assets/snake-game/2.png'],
+      doc: 'https://github.com/will9191/snake-game',
+      deploy: '',
+      techs: [1],
     },
   ];
 
